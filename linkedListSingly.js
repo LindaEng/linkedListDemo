@@ -39,7 +39,28 @@ class SinglyLinkedList {
     }
     //create a function that console logs every node
 
-    //create a function that returns the tail(last node)
+    //create a function that sets the tail(last node)
+
+//////////// Singly LL challenges /////////////
+
+    //find node
+    // findNode(node) {
+
+    // }
+
+    //insertNodeAtIdx
+    // insertNodeAtIdx(idx, node) {
+
+    // }
+
+    //deleteNodeAtIdx
+    // deleteNodeAtIdx(idx){
+
+    // }
+
+//////////// CHALLENGE /////////////    
+//Prompt: Write a method that determines if the SSl is circular (hint: think of what happens when you draw a circle)
+
 }
 
 //we want to see what the SLL looks like
