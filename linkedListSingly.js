@@ -38,6 +38,23 @@ class SinglyLinkedList {
        return
     }
     //create a function that console logs every node
+    printNodes() {
+        //we start at the head
+        if(!this.head){
+            console.log('No nodes in this linked list')
+            return
+        } else {
+            //define our starting point
+            let currentNode = this.head
+            while(currentNode !== null){
+                //print out the node
+                console.log(currentNode)
+                //we traverse
+                currentNode = currentNode.next
+            }
+        }
+        
+    }
 
 //////////// Singly LL challenges /////////////
 
@@ -59,18 +76,19 @@ class SinglyLinkedList {
     // }
 
 //////////// CHALLENGE /////////////    
-//Prompt: Write a method that determines if the SSl is circular (hint: think of what happens when you draw a circle)
+//Prompt: Write a method that determines if the SSl is circular (hint: think of what happens when you draw a circle) //returns a boolean
 
 }
 
 //we want to see what the SLL looks like
 const sLL = new SinglyLinkedList()
+
+
 sLL.setHead('Irene')
 sLL.addNode('Yannick')
 sLL.addNode('Mark')
-sLL.setHead('Anuja')
+sLL.addNode('Erica')
+sLL.addNode('Linda')
 
-
-
-
-console.log(sLL)
+sLL.printNodes()
+// console.log(sLL)
