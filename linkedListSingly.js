@@ -1,0 +1,1 @@
+const Num = 10;
