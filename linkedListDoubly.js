@@ -2,8 +2,8 @@
 class Node {
     constructor(data, prev = null, next = null) {
         this.data = data
-        this.prev
-        this.next
+        this.prev = prev
+        this.next = next
     }
 }
 
@@ -21,7 +21,7 @@ class DoublyLinkedList {
             // this.tail = this.head
             return
         } else {
-            //we will create a variable that represents the old head [newHead] <- [prev: null data: next: [node]] -> [node]
+            //we will create a variable that represents the old head [newHead] <- [prev: null data: next: [Node]] -> [node]
             let oldHead = this.head
             //define the new head and set it
             this.head = new Node(data)
@@ -43,9 +43,10 @@ class DoublyLinkedList {
             }
             //we are now at the last node of our DLL
             let newNode = new Node(data)
+            console.log('LAST NODE', currentNode)
             currentNode.next = newNode
             //define newNode's prev pointer to the last node
-            newNode.prev = currrentNode
+            newNode.prev = currentNode
             return
         }
     }
