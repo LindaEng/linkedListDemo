@@ -39,9 +39,9 @@ class SinglyLinkedList {
     }
     //create a function that console logs every node
 
-    //create a function that sets the tail(last node)
-
 //////////// Singly LL challenges /////////////
+
+    //create a function that sets the tail(last node)
 
     //find node
     // findNode(node) {
